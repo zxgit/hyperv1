@@ -1,0 +1,61 @@
+{
+    "name": "hyperf/rpc-client",
+    "description": "An abstract rpc server component for Hyperf.",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "swoole",
+        "hyperf",
+        "rpc",
+        "rpc-client",
+        "json-rpc"
+    ],
+    "support": {
+    },
+    "require": {
+        "php": ">=7.2",
+        "psr/container": "^1.0",
+        "hyperf/rpc": "~1.0.0",
+        "hyperf/load-balancer": "~1.0.0",
+        "hyperf/utils": "~1.0.0"
+    },
+    "require-dev": {
+        "malukenho/docheader": "^0.1.6",
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^7.0.0",
+        "friendsofphp/php-cs-fixer": "^2.9"
+    },
+    "suggest": {
+        "hyperf/consul": "For fetch the nodes info from consul.",
+        "hyperf/di": "For better container experience.",
+        "hyperf/pool": "Required to use connection pool."
+    },
+    "autoload": {
+        "files": [
+        ],
+        "psr-4": {
+            "Hyperf\\RpcClient\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "hyperf": {
+            "config": "Hyperf\\RpcClient\\ConfigProvider"
+        }
+    },
+    "bin": [
+    ],
+    "scripts": {
+        "cs-fix": "php-cs-fixer fix $1",
+        "test": "phpunit --colors=always"
+    }
+}
