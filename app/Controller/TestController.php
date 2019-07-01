@@ -77,6 +77,7 @@ class TestController extends Controller
             ['id' => 2, 'name' => 'Sam'],
             ['id' => 3, 'name' => 'Tim'],
             ['id' => 4, 'name' => 'Joe'],
+            ['id' => 5, 'name' => 'zhangx'],
         ];
         return new Paginator($users, $perPage, $currentPage);
     }
