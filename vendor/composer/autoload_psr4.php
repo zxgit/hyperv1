@@ -77,6 +77,7 @@ return array(
     'Hyperf\\DbConnection\\' => array($vendorDir . '/hyperf/db-connection/src'),
     'Hyperf\\Database\\' => array($vendorDir . '/hyperf/database/src'),
     'Hyperf\\Contract\\' => array($vendorDir . '/hyperf/contract/src'),
+    'Hyperf\\Consul\\' => array($vendorDir . '/hyperf/consul/src'),
     'Hyperf\\Constants\\' => array($vendorDir . '/hyperf/constants/src'),
     'Hyperf\\Config\\' => array($vendorDir . '/hyperf/config/src'),
     'Hyperf\\ConfigAliyunAcm\\' => array($vendorDir . '/hyperf/config-aliyun-acm/src'),

@@ -32,6 +32,7 @@ final class Versions
   'hyperf/config' => 'v1.0.1@dd6d19114e9a100e6801dc9c14809b2099c57d3f',
   'hyperf/config-aliyun-acm' => 'v1.0.1@615f3ae8f74e1813dbfe3bc4858126018bdd7c38',
   'hyperf/constants' => 'v1.0.1@0e36dddf5820fbbe3574406b33b49f07fd63ed54',
+  'hyperf/consul' => 'v1.0.1@d4229da36df0f924efe820e04fe15dc2d9dee931',
   'hyperf/contract' => 'v1.0.1@28c9cf7fe135c94ba87d9465d0e7e132af280523',
   'hyperf/database' => 'v1.0.1@589b384dee31fae21e742f96526b784f73ebf5d7',
   'hyperf/db-connection' => 'v1.0.1@a031398336d5111c7253678745921d263ed51b9f',
@@ -154,7 +155,7 @@ final class Versions
   'symfony/stopwatch' => 'v4.3.1@6b100e9309e8979cf1978ac1778eb155c1f7d93b',
   'theseer/tokenizer' => '1.1.3@11336f6f84e16a720dae9d8e6ed5019efa85a0f9',
   'webmozart/assert' => '1.4.0@83e253c8e0be5b0257b881e1827274667c5c17a9',
-  'hyperf/hyperf-skeleton' => 'dev-master@638aa8c848603c938cdde2c2229654648114ead4',
+  'hyperf/hyperf-skeleton' => 'dev-master@f146094c26815d9813eadc3aa458c809b3e43177',
 );
 
     private function __construct()

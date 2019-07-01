@@ -45,7 +45,8 @@
         "hyperf/amqp": "~1.0.0",
         "hyperf/model-cache": "~1.0.0",
         "hyperf/elasticsearch": "~1.0.0",
-        "hyperf/tracer": "~1.0.0"
+        "hyperf/tracer": "~1.0.0",
+        "hyperf/consul": "^1.0"
     },
     "require-dev": {
         "swoft/swoole-ide-helper": "^4.2",

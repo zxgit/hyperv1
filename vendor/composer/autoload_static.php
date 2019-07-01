@@ -128,6 +128,7 @@ class ComposerStaticInitc1ed5d2388abaa84536da06b871d5305
             'Hyperf\\DbConnection\\' => 20,
             'Hyperf\\Database\\' => 16,
             'Hyperf\\Contract\\' => 16,
+            'Hyperf\\Consul\\' => 14,
             'Hyperf\\Constants\\' => 17,
             'Hyperf\\Config\\' => 14,
             'Hyperf\\ConfigAliyunAcm\\' => 23,
@@ -466,6 +467,10 @@ class ComposerStaticInitc1ed5d2388abaa84536da06b871d5305
         'Hyperf\\Contract\\' => 
         array (
             0 => __DIR__ . '/..' . '/hyperf/contract/src',
+        ),
+        'Hyperf\\Consul\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hyperf/consul/src',
         ),
         'Hyperf\\Constants\\' => 
         array (

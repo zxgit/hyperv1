@@ -1987,6 +1987,67 @@
         ]
     },
     {
+        "name": "hyperf/consul",
+        "version": "v1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/hyperf-cloud/consul.git",
+            "reference": "d4229da36df0f924efe820e04fe15dc2d9dee931"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/hyperf-cloud/consul/zipball/d4229da36df0f924efe820e04fe15dc2d9dee931",
+            "reference": "d4229da36df0f924efe820e04fe15dc2d9dee931",
+            "shasum": "",
+            "mirrors": [
+                {
+                    "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                    "preferred": true
+                }
+            ]
+        },
+        "require": {
+            "hyperf/guzzle": "~1.0.0",
+            "php": ">=7.2"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "^2.9",
+            "malukenho/docheader": "^0.1.6",
+            "mockery/mockery": "^1.0",
+            "phpunit/phpunit": "^7.0.0"
+        },
+        "time": "2019-06-20T09:52:16+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            },
+            "hyperf": {
+                "config": "Hyperf\\Consul\\ConfigProvider"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "files": [],
+            "psr-4": {
+                "Hyperf\\Consul\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "A Consul Client for Hyperf.",
+        "keywords": [
+            "consul",
+            "consul-client",
+            "hyperf",
+            "php",
+            "swoole"
+        ]
+    },
+    {
         "name": "hyperf/contract",
         "version": "v1.0.1",
         "version_normalized": "1.0.1.0",
