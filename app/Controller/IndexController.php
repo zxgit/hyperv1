@@ -26,7 +26,7 @@ class IndexController extends Controller
 
         return [
             'method' => $method,
-            'message' => "Hello world.. {$user}.",
+            'message' => "Hello world111.. {$user}.",
             'code' => 0,
             'data'=>[
                 'id'=>1,
@@ -34,5 +34,18 @@ class IndexController extends Controller
                 'message'=>'Hello Hyperf222.'
             ]
         ];
+    }
+
+    public function bb()
+    {
+        return [
+        'code' => 0,
+        'data'=>[
+            'id'=>1,
+            'name'=>'测试222',
+            'message'=>'Hello Hyperf222333.'
+        ]
+    ];
+
     }
 }

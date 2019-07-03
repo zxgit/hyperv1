@@ -11,6 +11,11 @@
 namespace App\JsonRpc;
 use Hyperf\RpcServer\Annotation\RpcService;
 
+/**
+ * Class CaculatorService
+ * @package App\JsonRpc
+ * @RpcService(name="CaculatorService", protocol="jsonrpc-http", server="jsonrpc-http",publishTo="consul")
+ */
 class CaculatorService implements CalculatorServiceInterface
 {
     /**
@@ -22,7 +27,7 @@ class CaculatorService implements CalculatorServiceInterface
      * @email 254673218@qq.com
      * @version 1.5.1.0
      * @datetime 2019/7/1 15:56
-     * @RpcService(name="CaculatorService", protocol="jsonrpc-http", server="jsonrpc-http","publishTo"="consul")
+     *
      */
     public function caculate(int $a, int $b):int
     {
@@ -41,6 +46,6 @@ class CaculatorService implements CalculatorServiceInterface
      */
     public function getInfo(int $id, string $name):int
     {
-        return ['id'=>$id,'name'=>$name];
+        return 111;
     }
 }

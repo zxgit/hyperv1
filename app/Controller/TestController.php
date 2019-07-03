@@ -13,6 +13,8 @@ declare(strict_types=1);
 namespace App\Controller;
 
 
+use App\JsonRpc\CaculatorService;
+use App\JsonRpc\ConsumerService;
 use App\Service\UserInterface;
 use Guzzle\Http\Message\RequestInterface;
 use Hyperf\Di\Annotation\Inject;
@@ -31,6 +33,12 @@ class TestController extends Controller
      * @var UserInterface
      */
     private  $userService;
+
+    /**
+     * @Inject()
+     * @var ConsumerService
+     */
+    private $ConsumerService;
 
     public function index()
     {
@@ -68,6 +76,14 @@ class TestController extends Controller
         return $this->userService->eventTestv2($this->request->input('id'),$this->request->input('name','zxzx'));
     }
 
+    /**
+     * 分页器-但是这种分页不安逸
+     * @return Paginator
+     * @author zhangx
+     * @email 254673218@qq.com
+     * @version 1.5.1.0
+     * @datetime 2019/7/2 10:49
+     */
     public function pageTest()
     {
         $currentPage = $this->request->input('page', 1);
@@ -80,5 +96,16 @@ class TestController extends Controller
             ['id' => 5, 'name' => 'zhangx'],
         ];
         return new Paginator($users, $perPage, $currentPage);
+    }
+
+
+    public function caculate()
+    {
+        return $this->ConsumerService->caculate($this->request->input('a'),$this->request->input('b'));
+    }
+
+    public function getInfo()
+    {
+        return $this->ConsumerService->getInfo($this->request->input('id'),$this->request->input('name'));
     }
 }

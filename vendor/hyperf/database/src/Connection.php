@@ -230,8 +230,9 @@ class Connection implements ConnectionInterface
 
     /**
      * Begin a fluent query against a database table.
+     * @param Expression|string $table
      */
-    public function table(string $table): Builder
+    public function table($table): Builder
     {
         return $this->query()->from($table);
     }

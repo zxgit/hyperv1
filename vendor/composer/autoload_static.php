@@ -118,6 +118,9 @@ class ComposerStaticInitc1ed5d2388abaa84536da06b871d5305
             'Hyperf\\HttpServer\\' => 18,
             'Hyperf\\HttpMessage\\' => 19,
             'Hyperf\\Guzzle\\' => 14,
+            'Hyperf\\Grpc\\' => 12,
+            'Hyperf\\GrpcServer\\' => 18,
+            'Hyperf\\GrpcClient\\' => 18,
             'Hyperf\\Framework\\' => 17,
             'Hyperf\\ExceptionHandler\\' => 24,
             'Hyperf\\Event\\' => 13,
@@ -145,6 +148,10 @@ class ComposerStaticInitc1ed5d2388abaa84536da06b871d5305
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
+            'Grpc\\' => 5,
+            'Google\\Protobuf\\' => 16,
+            'GPBMetadata\\Google\\Protobuf\\' => 28,
+            'GPBMetadata\\' => 12,
         ),
         'F' => 
         array (
@@ -428,6 +435,18 @@ class ComposerStaticInitc1ed5d2388abaa84536da06b871d5305
         array (
             0 => __DIR__ . '/..' . '/hyperf/guzzle/src',
         ),
+        'Hyperf\\Grpc\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hyperf/grpc/src',
+        ),
+        'Hyperf\\GrpcServer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hyperf/grpc-server/src',
+        ),
+        'Hyperf\\GrpcClient\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hyperf/grpc-client/src',
+        ),
         'Hyperf\\Framework\\' => 
         array (
             0 => __DIR__ . '/..' . '/hyperf/framework/src',
@@ -523,6 +542,22 @@ class ComposerStaticInitc1ed5d2388abaa84536da06b871d5305
         'GuzzleHttp\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
+        ),
+        'Grpc\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/grpc/Grpc',
+        ),
+        'Google\\Protobuf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/google/protobuf/src/Google/Protobuf',
+        ),
+        'GPBMetadata\\Google\\Protobuf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/google/protobuf/src/GPBMetadata/Google/Protobuf',
+        ),
+        'GPBMetadata\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/grpc/GPBMetadata',
         ),
         'Fig\\Http\\Message\\' => 
         array (
