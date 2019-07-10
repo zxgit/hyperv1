@@ -48,6 +48,8 @@ return array(
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'MathPHP\\' => array($vendorDir . '/markrogoyski/math-php/src'),
     'Jean85\\' => array($vendorDir . '/jean85/pretty-package-versions/src'),
+    'Hyperf\\WebSocketServer\\' => array($vendorDir . '/hyperf/websocket-server/src'),
+    'Hyperf\\WebSocketClient\\' => array($vendorDir . '/hyperf/websocket-client/src'),
     'Hyperf\\Utils\\' => array($vendorDir . '/hyperf/utils/src'),
     'Hyperf\\Tracer\\' => array($vendorDir . '/hyperf/tracer/src'),
     'Hyperf\\Testing\\' => array($vendorDir . '/hyperf/testing/src'),

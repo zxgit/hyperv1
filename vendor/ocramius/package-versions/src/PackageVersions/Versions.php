@@ -65,6 +65,8 @@ final class Versions
   'hyperf/server' => 'v1.0.1@a6d8b1a7dffce0fe921fc8f31521f5bbe22d73c4',
   'hyperf/tracer' => 'v1.0.1@3f6110de4ec1b177cedc25ae15f68885186a8306',
   'hyperf/utils' => 'v1.0.1@724cc46d3dfc0ecfc3d81aae41fa113e0c277d4c',
+  'hyperf/websocket-client' => 'v1.0.3@d3f0de389bcee475fa9a8a8429a56a9bee5f27e9',
+  'hyperf/websocket-server' => 'v1.0.3@2583351a302c7019e0e694ddaad9a5aea6aa1931',
   'markrogoyski/math-php' => 'v0.49.0@41d56a7542233cbb0489e7982facdb1d88d8c08b',
   'monolog/monolog' => '1.24.0@bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266',
   'nesbot/carbon' => '2.20.0@bc671b896c276795fad8426b0aa24e8ade0f2498',
@@ -159,7 +161,7 @@ final class Versions
   'symfony/stopwatch' => 'v4.3.2@6b100e9309e8979cf1978ac1778eb155c1f7d93b',
   'theseer/tokenizer' => '1.1.3@11336f6f84e16a720dae9d8e6ed5019efa85a0f9',
   'webmozart/assert' => '1.4.0@83e253c8e0be5b0257b881e1827274667c5c17a9',
-  'hyperf/hyperf-skeleton' => 'dev-master@e8e204b19c7dc2854daf67b87e163eb4a4ce6be4',
+  'hyperf/hyperf-skeleton' => 'dev-master@0e4b800196ef537af026c9714a9b5083d61dc87d',
 );
 
     private function __construct()

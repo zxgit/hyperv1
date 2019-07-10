@@ -15,11 +15,13 @@ namespace App\Controller;
 
 use App\JsonRpc\CaculatorService;
 use App\JsonRpc\ConsumerService;
+use App\Service\DemoService;
 use App\Service\UserInterface;
 use Guzzle\Http\Message\RequestInterface;
 use Hyperf\Di\Annotation\Inject;
 use Hyperf\HttpServer\Annotation\AutoController;
 use Hyperf\Paginator\Paginator;
+use Hyperf\Redis\Redis;
 use Psr\Container\ContainerInterface;
 use Swoole\Http\Request;
 
@@ -39,6 +41,12 @@ class TestController extends Controller
      * @var ConsumerService
      */
     private $ConsumerService;
+
+    /**
+     * @Inject()
+     * @var DemoService
+     */
+    private $message;
 
     public function index()
     {
@@ -107,5 +115,23 @@ class TestController extends Controller
     public function getInfo()
     {
         return $this->ConsumerService->getInfo($this->request->input('id'),$this->request->input('name'));
+    }
+
+    public function publish()
+    {
+        $this->message->publish();
+    }
+
+    public function delay()
+    {
+        $this->message->delay();
+    }
+
+    public function redisTest()
+    {
+        $redis = $this->container->get(Redis::class);
+        //$redis->set('zx',111);
+        $keys  = $redis->keys('*');
+        print_r($keys);
     }
 }

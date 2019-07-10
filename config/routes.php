@@ -19,3 +19,7 @@ Router::addServer('grpc', function () {
         Router::post('/sayHello', 'App\Controller\HiController@sayHello');
     });
 });
+
+Router::addServer('ws', function () {
+    Router::get('/', 'App\Controller\WebSocketController');
+});

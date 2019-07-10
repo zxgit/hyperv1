@@ -16,10 +16,10 @@ class ComposerStaticInitc1ed5d2388abaa84536da06b871d5305
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         'bbeb7603826cb9296dde3ca1a840af47' => __DIR__ . '/..' . '/hyperf/utils/src/Functions.php',
         '46a9bb9cbc7a6a5c34938373dbe690c3' => __DIR__ . '/..' . '/hyperf/di/src/Functions.php',
+        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'ad155f8f1cf0d418fe49e248db8c661b' => __DIR__ . '/..' . '/react/promise/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
-        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'fdea4480df6c5882835d3b60a113de4d' => __DIR__ . '/..' . '/hyperf/config/src/Functions.php',
@@ -99,6 +99,8 @@ class ComposerStaticInitc1ed5d2388abaa84536da06b871d5305
         ),
         'H' => 
         array (
+            'Hyperf\\WebSocketServer\\' => 23,
+            'Hyperf\\WebSocketClient\\' => 23,
             'Hyperf\\Utils\\' => 13,
             'Hyperf\\Tracer\\' => 14,
             'Hyperf\\Testing\\' => 15,
@@ -358,6 +360,14 @@ class ComposerStaticInitc1ed5d2388abaa84536da06b871d5305
         'Jean85\\' => 
         array (
             0 => __DIR__ . '/..' . '/jean85/pretty-package-versions/src',
+        ),
+        'Hyperf\\WebSocketServer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hyperf/websocket-server/src',
+        ),
+        'Hyperf\\WebSocketClient\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hyperf/websocket-client/src',
         ),
         'Hyperf\\Utils\\' => 
         array (
